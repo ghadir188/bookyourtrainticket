@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Ticket</title>
+    <link rel="stylesheet" href="../Styles/navbar.css">
+    <link rel="stylesheet" href="../Styles/tickets.css">
+    <script src="https://kit.fontawesome.com/751b2eb172.js" crossorigin="anonymous"></script>
+    <script src="../Script/tickets.js"></script>
+</head>
+
+<body >
+    <header>
+    <a href="../Pages/index.html"  class="logo">    <img class="logo" src="../images/trainlogo.png" alt="logo"></a>
+        <nav>
+            <ul class="nav_bar">
+                <li><a href="../Pages/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a> </li>
+                <li><a href="#" class="active"><i class="fa fa-ticket" aria-hidden="true"></i></i> Tickets</a></li>
+                <li><a href="../Pages/train.html"><i class="fa fa-train" aria-hidden="true"></i> Trains</a></li>
+            </ul>
+
+        </nav>
+        <div><a class="contact" href="../Pages/register.html"  ><button>Register</button></a>
+            <a class="contact" href="mailto:########"><button>Contact Us</button></a>
+        </div>
+
+
+
+
+
+    </header>
+    <form>
+        <div class="search">
+            <h1>Book Your Next Train Ticket</h1>
+        </div>
+        <div id="search" class="search"><input id="from" type="text" placeholder="Where are you traveling from?"
+                required maxlength="10">
+
+            <input id="to" type="text" placeholder="Where are you going?" required maxlength="10">
+            <input type="button" onclick="toggle()" value="Search" id="searchbutton">
+        </div>
+        <div id="error">
+
+            <p id="p1">Please fill this</p>
+
+        </div>
+        <div id="ticket">
+
+            <div id="grid-container">
+                <div class="ticketlogo"><img src="../images/ticketlogo2.png"></div>
+                <div class="passenger">Passenger Name: <p id="p2"></p>
+                </div>
+
+                <div class="from">From:
+                </div>
+                <div class="to">to: </div>
+                <div class="departure">Departure Date: </div>
+                <div class="arriving">Arriving Date: </div>
+
+            </div>
+            <div id="buytheticket"><a href="tickets.html" ><button class="buyticket" 
+                >Buy Ticket</button></a></div>
+
+        </div>
+       
+        
+
+    </form>
+  
+
+</body>
+
+</html>

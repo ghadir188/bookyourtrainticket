@@ -1,0 +1,92 @@
+:root {
+    --background-color: white;
+    --font-color: black;
+    --font-family: sans-serif;
+    --button-font-color: white;
+    --primary-color: #0088a9;
+    --secondary-color: #156174;
+
+}
+
+* {
+    font-family: var(--font-family);
+}
+#head{
+    background-color: white;
+}
+div{
+    background-color: white;
+}
+.train_nav_bar{
+    background-color: white;
+}
+.train_head{
+    background-color: white;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+table {
+    margin-top: 10px;
+    width: 100%;
+    border: var(--primary-color) solid 4px;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+
+    text-align: center;
+    border: var(--primary-color) solid 4px;
+}
+
+table tr:first-child td {
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+table td {
+    padding: 5px;
+}
+
+@media all and (max-width:750px) {
+
+    table {
+        font-size: smaller;
+        width: 100%;
+    }
+
+
+}
+
+@media all and (max-width:400px) {
+    table {
+        font-size: 5px;
+    }
+
+    table tr:first-child td {
+
+        padding: 4px;
+
+    }
+
+    table td {
+        padding: 2px;
+    }
+
+    tr,
+    td {
+
+        text-align: center;
+        border: var(--primary-color) solid 3px;
+    }
+
+    table {
+        border: var(--primary-color) solid 3px;
+
+    }
+}
